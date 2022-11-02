@@ -1,0 +1,27 @@
+#background-video {
+    width: 45vw;
+    height: 45vh;
+    object-fit: cover;
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: auto;
+    margin-bottom: auto;
+    z-index: 1;
+  }
+
+  .experience {
+    
+    padding: 10px;
+    background: transparent;
+    border-style:dashed;
+    border-color: #583939;
+    color: #FFFFFF;
+    display:inline-block;
+    
+}
