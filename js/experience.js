@@ -3,7 +3,7 @@
         var className = $('#openbuttonapp').attr('class');
 
 
-        $('#openbuttonapp').click(function () {
+        $('#openbuttonapp').dblclick(function () {
             var $objWindow = $('<div class="window">Window ' + intCounter + '<br>&nbsp;Welcome to my Time Capsule!<b>(2018-2022)</b><br><br>  <b>2018</b><br>&nbsp;  -Purple Lightsaber (After Effects)   <br><br><br></div>');
 
             var intRandom = Math.floor((Math.random() * 12) + 1);
@@ -20,7 +20,7 @@
                 maximizable: true,
                 minimizable: true,
 
-                icon: '../src/jquery-lwd/themes/windows2000/images/icons/6.png'
+                icon: '../src/jquery-lwd/themes/sophia/images/icons/6.png'
             });
 
             intCounter++;
