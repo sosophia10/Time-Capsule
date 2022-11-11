@@ -1,6 +1,6 @@
 #background-video {
-    width: 45vw;
-    height: 45vh;
+    width: 35vw;
+    height: 35vh;
     object-fit: cover;
     position: fixed;
     left: 0;
@@ -24,4 +24,15 @@
     color: #FFFFFF;
     display:inline-block;
     
+}
+
+.sprinkles {
+    
+  padding: 10px;
+  background: transparent;
+  border-style:dashed;
+  border-color: #583939;
+  color: #FFFFFF;
+  display:inline-block;
+  
 }
