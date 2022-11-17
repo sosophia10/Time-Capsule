@@ -27,7 +27,7 @@
 }
 
 .menu-wrapper {
-  z-index: 1000;
+  z-index: 0;
   position: relative;
   height: 100%;
 
