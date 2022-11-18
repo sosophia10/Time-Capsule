@@ -20,7 +20,7 @@ $(document).ready(function () {
             maximizable: true,
             minimizable: true,
 
-            icon: '/src/jquery-lwd/themes/sophia/images/icons/6.png'
+            icon: '../src/jquery-lwd/themes/sophia/images/icons/6.png'
         });
 
         intCounter++;
