@@ -2,4 +2,4 @@
 
 Live Page: https://sosophia10.github.io/TimeCapsule/index/desktop.html
 
-Inspired by: https://simone.computer/#/webdesktops
+Inspired By: https://simone.computer/#/webdesktops
