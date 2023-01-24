@@ -13,7 +13,7 @@
                 width: 800,
                 height: windowH,
                 position: {
-                    my: 'left+' + 200 + ', top+' + 200,
+                    my: 'left+' + 200 + ', top+' + 0,
                     at: 'left top',
                     of: window
                 },
