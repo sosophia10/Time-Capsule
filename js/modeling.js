@@ -11,7 +11,7 @@ $(document).ready(function () {
         $objWindow.window({
 
             title: className,
-            width: 475,
+            width: 550,
             height: windowH,
             position: {
                 my: 'left+' + 200 + ', top+' + 200,
