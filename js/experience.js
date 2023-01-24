@@ -21,7 +21,7 @@ $(document).ready(function () {
             maximizable: true,
             minimizable: true,
 
-            icon: '../src/jquery-lwd/themes/sophia/images/icons/14.png'
+            icon: '../src/jquery-lwd/themes/sophia/images/icons/13.png'
         });
 
         intCounter++;
