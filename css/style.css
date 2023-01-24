@@ -39,7 +39,7 @@
 }
 
 .menu {
-  z-index: 1000;
+  z-index: 10000;
   position: absoulte;
   bottom:0;
 }
@@ -302,10 +302,12 @@
 
 }
 
+button{
+  cursor: pointer;
+}
 
 
-
-< !--End-->.icon {
+<!--End-->.icon {
   margin-bottom: 10px;
 
 }
@@ -319,6 +321,7 @@
   color: #FFFFFF;
   display: inline-block;
   max-width: 114px;
+  cursor: pointer;
 }
 
 .sprinkles {
@@ -330,35 +333,9 @@
   color: #FFFFFF;
   display: inline-block;
   max-width: 114px;
+  cursor: pointer;
 }
 
-.dalek {
-
-  padding: 10px;
-  background: transparent;
-  border-style: dashed;
-  border-color: #583939;
-  color: #FFFFFF;
-  display: inline-block;
-  max-width: 114px;
-}
-
-.love {
-
-  padding: 10px;
-  background: transparent;
-  border-style: dashed;
-  border-color: #583939;
-  color: #FFFFFF;
-  display: inline-block;
-  max-width: 114px;
-
-}
-
-.love img {
-  margin-top: -10px;
-
-}
 
 .interactive {
 
@@ -369,6 +346,7 @@
   color: #FFFFFF;
   display: inline-block;
   max-width: 114px;
+  cursor: pointer;
 
 }
 
@@ -381,6 +359,7 @@
   color: #FFFFFF;
   display: inline-block;
   max-width: 114px;
+  cursor: pointer;
 
 }
 
@@ -393,6 +372,7 @@
   color: #FFFFFF;
   display: inline-block;
   max-width: 114px;
+  cursor: pointer;
 
 }
 
@@ -405,6 +385,7 @@
   color: #FFFFFF;
   display: inline-block;
   max-width: 114px;
+  cursor: pointer;
 
 }
 
@@ -417,6 +398,7 @@
   color: #FFFFFF;
   display: inline-block;
   max-width: 114px;
+  cursor: pointer;
 
 }
 
@@ -429,6 +411,7 @@
   color: #FFFFFF;
   display: inline-block;
   max-width: 114px;
+  cursor: pointer;
 
 }
 
@@ -441,6 +424,7 @@
   color: #FFFFFF;
   display: inline-block;
   max-width: 114px;
+  cursor: alias;
 
 }
 
@@ -453,6 +437,7 @@
   color: #FFFFFF;
   display: inline-block;
   max-width: 114px;
+  cursor: alias;
 
 }
 
@@ -465,6 +450,7 @@
   color: #FFFFFF;
   display: inline-block;
   max-width: 114px;
+  cursor: alias;
 
 }
 
@@ -477,5 +463,5 @@
   color: #FFFFFF;
   display: inline-block;
   max-width: 114px;
-
+  cursor: alias;
 }
