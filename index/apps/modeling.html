@@ -109,6 +109,17 @@
         object-fit: cover;
       }
 
+      .videoWrapper {
+        position: relative;
+        padding-bottom: 56.25%; /* 16:9 */
+        height: 0;
+      }
+      .videoWrapper iframe {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+      }
+
       .mySlides {
         display: none;
       }
@@ -214,11 +225,10 @@
     </div>
 
     <p>
-      3D modeling has been one of my favorite skills to learn. I have felt most
-      comfortable using 3D tools for design because it is efficient, precise,
-      always moldable, and in most cases, intuitive. I intend to continue
-      working with 3D software (such as Blender) throughout the duration of my
-      career as a designer.
+      3D modeling has been one of my favorite skills to learn. I enjoy using 3D
+      tools for design because it is efficient, precise, always moldable, and in
+      most cases, intuitive. I hope to continue working with 3D software (such
+      as Blender) throughout the duration of my career as a designer.
     </p>
 
     <div class="tab nav">
@@ -256,7 +266,7 @@
       <button class="tablink" onclick="openPage(event, 'Obj2021Project1')">
         Chair
       </button>
-      <button class="tablink" onclick="openPage(event, 'Obj2022Project2')">
+      <button class="tablink" onclick="openPage(event, 'Obj2021Project2')">
         Circuit City
       </button>
     </div>
@@ -275,7 +285,7 @@
 
     <div id="Obj2019Project1" class="tabcontent3">
       <div class="subheader" style="text-align: center; text-decoration: none;">
-        Penguin (Low-Polygon)
+        Penguin
       </div>
       <p>
         In 2018, I took a class in which introduced me to the fundamentals for
@@ -336,10 +346,10 @@
       </p>
       <img src="../../media/modeling/cokecan.png" />
       <p>
-        My dad loves to drink Diet Coke, and has been doing so in liters
-        everyday of his life since before maturity. I thought of him as I built
-        this, and while drinking any soda. I found a regular CocaCola
-        texture-wrap that was free for use, so I snagged it.
+        My dad loves Diet Coke, and has been drinking it by the liter everyday
+        of his life since before adulthood. I thought of him as I built this
+        model. I found a CocaCola texture-wrap that was free for use, so I
+        snagged it.
       </p>
     </div>
 
@@ -357,11 +367,13 @@
       <p>
         <br />
         <br />
-        My grandmother owned a house in a gated community that prohibits
-        backyard fencelines. Before I was 10, I used to wonder into one of her
-        neighbor's backyards and pick lemons from their trees. Around that age,
-        I loved to suck on lemons. I don't think I particularly liked the taste,
-        but it would make my family gasp in awe which I thought was fun.
+        My grandmother lived in a gated community that prohibits backyard
+        fencelines. Before I was 10 years old, I used to wander into her
+        neighbor's backyards to pick lemons from their trees. I loved to suck on
+        lemons, although I don't think I particularly enjoyed the sour taste. I
+        mostly enjoyed the attention I'd receive from my family. I remember them
+        gasping in awe at the fact that I could suck on a lemon slice until
+        there was only pulp left.
       </p>
     </div>
 
@@ -370,11 +382,11 @@
         Airport Chair
       </div>
       <p>
-        In 2021, I was assigned to model something to look as realistic as the
-        original object. The purpose of this project was to learn how to apply details to models
-        and textures; skills that taught me how to make objects look realistic.
-        The image with the transparent background was cut-out using Adobe
-        Photoshop.
+        In 2021, I was assigned to model something that looks exactly like the
+        original object. The purpose of this project was to learn how to detail
+        models using textures; a skill that taught me how to make objects look
+        realistic. The image with the transparent background was cut-out using
+        Adobe Photoshop.
       </p>
       <img
         style="object-fit: contain; margin-top: -100px; margin-bottom: -100px;"
@@ -403,20 +415,54 @@
         </div>
       </div>
       <p>
-        The original reference models are shown above. Some in-progress images are
-        shown below.
+        The original reference models are shown above. Some in-progress images
+        are shown below.
       </p>
 
       <div class="slideshow-container">
         <div class="mySlides fade">
           <p style="text-align: center; padding: 5px;">Smooth Texturing</p>
-          <img src="../../media/modeling/chairsmooth.png" style="width: 100%;" />
+          <img
+            src="../../media/modeling/chairsmooth.png"
+            style="width: 100%;"
+          />
         </div>
         <div class="mySlides fade">
           <p style="text-align: center; padding: 5px;">Rough Texturing</p>
           <img src="../../media/modeling/chairrough.png" style="width: 100%;" />
         </div>
-        <br>
+        <br />
+        <a class="prev">&#10094;</a>
+        <a class="next">&#10095;</a>
+        <div style="text-align: center;">
+          <span class="dot"></span>
+          <span class="dot"></span>
+        </div>
+      </div>
+    </div>
+    <div id="Obj2021Project2" class="tabcontent3">
+      <div class="subheader" style="text-align: center; text-decoration: none;">
+        Circuit City
+      </div>
+      <p>
+        In 2021, I created a mini-city to mimic a motherboard. My goal in this
+        assignment was to imagine an everday object coming to life, while still
+        maintaining its functionality. I used the following images as a
+        reference for the layout and design of individual objects.
+      </p>
+      <img
+        style="text-align: center; padding: 5px;"
+        src="../../media/modeling/CCmoodboard.png"
+      />
+      <div class="slideshow-container">
+        <p style="text-align: center; padding: 5px;">References:</p>
+        <div class="mySlides fade">
+          <img src="../../media/modeling/CCreference1.jpg" />
+        </div>
+        <div class="mySlides fade">
+          <img src="../../media/modeling/CCreference2.jpg" />
+        </div>
+        <br />
         <a class="prev">&#10094;</a>
         <a class="next">&#10095;</a>
         <div style="text-align: center;">
@@ -425,80 +471,230 @@
         </div>
       </div>
 
+      <p>
+        Circuit City is the newest of non-technologies to be introduced to your
+        PC’s system unit. More specifically, Circuit City is a living, bustling
+        township built to occupy and operate your motherboard. Circuit City runs
+        your motherboard as effectively and efficiently as actual people,
+        keeping your computer processes running at humanly-capable speeds and
+        production (including the possibility for human-error).
+        <br />
+        <br />
+        How does this living-motherboard work as a computer motherboard? Your
+        memory is stored within the residents, who live in the neighborhood.
+        Three zones for working make up the functionality of your motherboard: A
+        Commercial Zone for managing production, an Industrial Zone that
+        generates resources for production, and Ports for importing and
+        exporting assets.
+      </p>
+      <div class="slideshow-container">
+        <p style="text-align: center; padding: 5px;">Circuit City:</p>
+        <div class="mySlides fade">
+          <img src="../../media/modeling/ccity1.png" />
+        </div>
+        <div class="mySlides fade">
+          <img src="../../media/modeling/ccity2.png" />
+        </div>
+        <div class="mySlides fade">
+          <img src="../../media/modeling/ccity3.png" />
+        </div>
+        <div class="mySlides fade">
+          <img src="../../media/modeling/ccity4.png" />
+        </div>
+        <div class="mySlides fade">
+          <img src="../../media/modeling/ccity5.png" />
+        </div>
+        <div class="mySlides fade">
+          <img src="../../media/modeling/ccity6.png" />
+        </div>
+        <br />
+        <a class="prev">&#10094;</a>
+        <a class="next">&#10095;</a>
+        <div style="text-align: center;">
+          <span class="dot"></span>
+          <span class="dot"></span>
+          <span class="dot"></span>
+          <span class="dot"></span>
+          <span class="dot"></span>
+          <span class="dot"></span>
+        </div>
+      </div>
+      <p>
+        The environment consists of elements from a motherboard, with less
+        emphasis on the functionality of each piece. The theme is shown within
+        the architecture and details of the scene. Some components can be
+        recognized from an actual motherboard, such as the fan and ports. The
+        color scheme is blue-green with faint circuitry texturing each object;
+        typical colors/patterns found on circuit boards. An added element is the
+        fabric found beneath the neighborhood to substitute grass and clarify
+        the scale of Circuit City.
+      </p>
+    </div>
+
+    <div id="Anim2021Project1" class="tabcontent3">
+      <div class="subheader" style="text-align: center; text-decoration: none;">
+        A Love Letter to Nature
+      </div>
+      <p>
+        This animation depicts a moment spent out with nature. Like my project,
+        nature has many individual elements to make up the whole. I chose this
+        specific scene because I adore flowers and the way hundreds of them can
+        embellish a field with their bright colors. The creek that flows through
+        this valley’s pass fills my breezy scene with an additional layer of
+        serenity.
+      </p>
+      <div class="slideshow-container">
+        <p style="text-align: center; padding: 5px;">In-Progress:</p>
+        <div class="mySlides fade">
+          <img src="../../media/modeling/LLTN1.jpg" />
+        </div>
+        <div class="mySlides fade">
+          <img src="../../media/modeling/LLTN2.JPG" />
+        </div>
+        <div class="mySlides fade">
+          <img src="../../media/modeling/LLTN3.JPG" />
+        </div>
+        <br />
+        <a class="prev">&#10094;</a>
+        <a class="next">&#10095;</a>
+        <div style="text-align: center;">
+          <span class="dot"></span>
+          <span class="dot"></span>
+          <span class="dot"></span>
+        </div>
+      </div>
+      <p>
+        A tree in nature contributes effortlessly to the needs of its
+        environment, however, a tree by itself is sustained by its leaves,
+        roots, and stem that fluently manages the flow and devastation of
+        natural processes. All individual parts used by the tree (such as its
+        leaves) are seamlessly integrated by the whole. The leaves are fed upon
+        by inhabitants of the ecosystem, and perhaps used for shelter or shade.
+        As temperatures drop, a tree goes dormant and lets its leaves fall to
+        the ground where organisms may consume its energy and integrate its
+        essence back into the soil. In other words, individually, a leaf is a
+        part of the tree and a part of the whole.
+        <br />
+        <br />
+        All elements of nature is nature itself; we are one and many, and every
+        fragment of this environment is enabled to provide itself to the whole
+        as the whole can provide for it. The clouds are to eventually release
+        their load into the flowing stream, the stream will flow to sections of
+        the field that mean to feed from its nutrients, the plants develop an
+        ecosystem that nourishes its flora and fauna brethren, the butterfly
+        feeds from the landscape and contributes to the transfer of pollen, and
+        nature continually receives back what has been created or used. Cycles
+        form, repeat, and die, permitting nature to claim both chaos and
+        repetition as its natural function.
+      </p>
+      <div class="videowrapper">
+        <p style="text-align: center; padding: 5px;">In-Progress:</p>
+        <iframe
+          src="https://player.vimeo.com/video/790310347?h=b1235fbad7"
+          width="800"
+          height="500"
+          frameborder="0"
+          allow="autoplay; fullscreen"
+          allowfullscreen
+        ></iframe>
+      </div>
+      <p>
+        <br />
+        <br />
+        I created order through movement (generated by the breeze that pervades
+        the scene) within each element of this animation, however the placement
+        and size dynamics were mostly in control of the Blender software, thus
+        grass blades and leaves were placed as randomly as nature could’ve
+        predicted. The wind is to project the oneness of all things in this
+        scene, yet all things remain their own.
+      </p>
+      <div class="videowrapper">
+        <p style="text-align: center; padding: 5px;">Final:</p>
+        <iframe
+          src="https://player.vimeo.com/video/790310496?h=76d8b1181f"
+          width="800"
+          height="500"
+          frameborder="0"
+          allow="autoplay; fullscreen"
+          allowfullscreen
+        ></iframe>
+      </div>
+      <p></p>
     </div>
 
     <script>
-      ;(function () {
-        init() //on page load - show first slide, hidethe rest
+      ; (function () {
+          init() //on page load - show first slide, hidethe rest
 
-        function init() {
-          parents = document.getElementsByClassName('slideshow-container')
+          function init() {
+              parents = document.getElementsByClassName('slideshow-container')
 
-          for (j = 0; j < parents.length; j++) {
-            var slides = parents[j].getElementsByClassName('mySlides')
-            var dots = parents[j].getElementsByClassName('dot')
-            slides[0].classList.add('active-slide')
-            dots[0].classList.add('active')
-          }
-        }
-
-        dots = document.getElementsByClassName('dot') //dots functionality
-
-        for (i = 0; i < dots.length; i++) {
-          dots[i].onclick = function () {
-            slides = this.parentNode.parentNode.getElementsByClassName(
-              'mySlides',
-            )
-
-            for (j = 0; j < this.parentNode.children.length; j++) {
-              this.parentNode.children[j].classList.remove('active')
-              slides[j].classList.remove('active-slide')
-              if (this.parentNode.children[j] == this) {
-                index = j
+              for (j = 0; j < parents.length; j++) {
+                  var slides = parents[j].getElementsByClassName('mySlides')
+                  var dots = parents[j].getElementsByClassName('dot')
+                  slides[0].classList.add('active-slide')
+                  dots[0].classList.add('active')
               }
-            }
-            this.classList.add('active')
-            slides[index].classList.add('active-slide')
           }
-        }
-        //prev/next functionality
-        links = document.querySelectorAll('.slideshow-container a')
 
-        for (i = 0; i < links.length; i++) {
-          links[i].onclick = function () {
-            current = this.parentNode
+          dots = document.getElementsByClassName('dot') //dots functionality
 
-            var slides = current.getElementsByClassName('mySlides')
-            var dots = current.getElementsByClassName('dot')
-            curr_slide = current.getElementsByClassName('active-slide')[0]
-            curr_dot = current.getElementsByClassName('active')[0]
-            curr_slide.classList.remove('active-slide')
-            curr_dot.classList.remove('active')
-            if (this.className == 'next') {
-              if (
-                curr_slide.nextElementSibling.classList.contains('mySlides')
-              ) {
-                curr_slide.nextElementSibling.classList.add('active-slide')
-                curr_dot.nextElementSibling.classList.add('active')
-              } else {
-                slides[0].classList.add('active-slide')
-                dots[0].classList.add('active')
+          for (i = 0; i < dots.length; i++) {
+              dots[i].onclick = function () {
+                  slides = this.parentNode.parentNode.getElementsByClassName(
+                      'mySlides',
+                  )
+
+                  for (j = 0; j < this.parentNode.children.length; j++) {
+                      this.parentNode.children[j].classList.remove('active')
+                      slides[j].classList.remove('active-slide')
+                      if (this.parentNode.children[j] == this) {
+                          index = j
+                      }
+                  }
+                  this.classList.add('active')
+                  slides[index].classList.add('active-slide')
               }
-            }
-
-            if (this.className == 'prev') {
-              if (curr_slide.previousElementSibling) {
-                curr_slide.previousElementSibling.classList.add('active-slide')
-                curr_dot.previousElementSibling.classList.add('active')
-              } else {
-                slides[slides.length - 1].classList.add('active-slide')
-                dots[slides.length - 1].classList.add('active')
-              }
-            }
           }
-        }
+
+          let currentIndex = 0;
+
+          //prev/next functionality
+          links = document.querySelectorAll('.slideshow-container a')
+
+          for (i = 0; i < links.length; i++) {
+              links[i].onclick = function () {
+                  current = this.parentNode
+                  var slides = current.getElementsByClassName('mySlides')
+                  var dots = current.getElementsByClassName('dot')
+                  curr_slide = slides[currentIndex]
+                  curr_dot = dots[currentIndex]
+                  curr_slide.classList.remove('active-slide')
+                  curr_dot.classList.remove('active')
+
+                  if (this.className == 'next') {
+                      if (currentIndex === slides.length - 1) {
+                          currentIndex = 0
+                      } else {
+                          currentIndex += 1
+                      }
+                  }
+
+                  if (this.className == 'prev') {
+                      if (currentIndex === 0) {
+                          currentIndex = slides.length - 1
+                      } else {
+                          currentIndex -= 1
+                      }
+                  }
+                  curr_slide = slides[currentIndex]
+                  curr_dot = dots[currentIndex]
+                  curr_slide.classList.add('active-slide')
+                  curr_dot.classList.add('active')
+              }
+          }
       })()
-    </script>
+  </script>
 
     <!--NAVIGATION SCRIPT-->
     <script>

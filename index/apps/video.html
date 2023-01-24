@@ -1,0 +1,598 @@
+<html>
+
+<head>
+    <title>Sophia's Time Capsule: Video Editing</title>
+    <style>
+        body {
+            font-family: 'Roboto Mono', monospace;
+            font-size: 16px;
+            background-color: #d3c7ae;
+        }
+
+        .nav {
+            width: 99%;
+            height: 40px;
+            background-color: #d3c7ae;
+            text-align: center;
+        }
+
+        .header {
+            font-size: 22px;
+            text-align: center;
+            font-weight: bold;
+            color: #5c0d70;
+            margin-top: 2em;
+        }
+
+        .title {
+            text-decoration: underline;
+        }
+
+        .date {
+            text-decoration: none;
+        }
+
+        .subheader {
+            font-weight: bold;
+            font-size: 18px;
+            text-decoration: underline;
+            font-weight: bold;
+            color: #5c0d70;
+            padding-left: 5px;
+        }
+
+        p {
+            font-size: 16px;
+            color: #000;
+            text-align: justify;
+            text-justify: inter-word;
+            padding: 30px;
+        }
+
+        .bulletmargin {
+            padding-left: 10px;
+        }
+
+        /* Style the tab */
+        .tab {
+            overflow: hidden;
+            background-color: #ebb190;
+        }
+
+        /* Style the buttons that are used to open the tab content */
+        .tab button {
+            color: #5c0d70;
+            background-color: inherit;
+            float: center;
+            border: none;
+            outline: none;
+            cursor: pointer;
+            padding: 14px 16px;
+            transition: 0.3s;
+        }
+
+        /* Change background color of buttons on hover */
+        .tab button:hover {
+            background-color: #cb8c89;
+        }
+
+        /* Create an active/current tablink class */
+        .tab button.active {
+            background-color: #5c0d70;
+            color: #ccc;
+        }
+
+        /* Style the tab content */
+        .tabcontent1 {
+            display: none;
+        }
+
+        /* Style the tab content */
+        .tabcontent2 {
+            display: none;
+        }
+
+        /* Style the tab content */
+        .tabcontent3 {
+            display: none;
+            padding: 24px 12px;
+        }
+
+        img {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            margin: center;
+            max-width: 1000px;
+            min-width: 400px;
+            width: 100%;
+            min-height: 400px;
+            max-height: 400px;
+            object-fit: cover;
+        }
+
+        .videoWrapper {
+            position: relative;
+            padding-bottom: 56.25%;
+            /* 16:9 */
+            height: 0;
+        }
+
+        .videoWrapper iframe {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+        }
+
+        .mySlides {
+            display: none;
+        }
+
+        .active-slide {
+            display: block;
+        }
+
+        .slideshow-container {
+            max-width: 1000px;
+            position: relative;
+            margin: auto;
+        }
+
+        /* Fading animation */
+        .fade {
+            animation-name: fade;
+            animation-duration: 1.5s;
+        }
+
+        @keyframes fade {
+            from {
+                opacity: 0.4;
+            }
+
+            to {
+                opacity: 1;
+            }
+        }
+
+        /* Next & previous buttons */
+        .prev,
+        .next {
+            cursor: pointer;
+            position: absolute;
+            top: 50%;
+            width: 20px;
+            padding: 16px;
+            margin-top: -50px;
+            color: #cb8c89;
+            font-weight: bold;
+            font-size: 48px;
+            font-stretch: ultra-condensed;
+            transition: 0.6s ease;
+            border-radius: 0 3px 3px 0;
+            user-select: none;
+        }
+
+        /* Position the "next button" to the right */
+        .next {
+            right: 0;
+            border-radius: 3px 0 0 3px;
+        }
+
+        /* On hover, add a grey background color */
+        .prev:hover,
+        .next:hover {
+            background-color: #ebb190a6;
+            color: #5c0d709f;
+        }
+
+        .dot {
+            cursor: pointer;
+            height: 13px;
+            width: 13px;
+            margin: 0 2px;
+            background-color: #ebb190;
+            border-radius: 50%;
+            display: inline-block;
+            transition: background-color 0.6s ease;
+        }
+
+        .active,
+        .dot:hover {
+            background-color: #cb8c89;
+        }
+
+        ::-webkit-scrollbar {
+            width: 15px;
+        }
+
+        ::-webkit-scrollbar-track {
+            background: #d3c7ae;
+        }
+
+        /* Handle */
+        ::-webkit-scrollbar-thumb {
+            background: #cb8c89;
+        }
+
+        /* Handle on hover */
+        ::-webkit-scrollbar-thumb:hover {
+            background: #ebb190;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="header">
+        <div class="title">
+            Video Editing
+            <br />
+            (After Effects and Premiere Pro)
+        </div>
+        <br />
+        <div class="date" stye="margin-top: -15px;">2019-2021</div>
+    </div>
+
+    <p>
+        I enjoy video editing, and am very comfortable using most post-production
+        tools. This is the first art skill that caught my academic interest. When
+        I was much younger, I loved to film movies by myself. Until I discovered
+        video game design, I wanted to work in film.
+        <br />
+        <br />
+        When I watch movies, I pay close attention to the frames; searching for
+        masking mistakes and computer graphic imagery. I have always enjoyed
+        learning about the process of film production, and my post-production
+        knowledge is what drives this habit of observing frames closely.
+    </p>
+
+    <div class="tab nav">
+        <!--5 project tabs-->
+        <button class="tablink" onclick="openPage(event, 'PS2019')">
+            2019
+        </button>
+        <button class="tablink" onclick="openPage(event, 'PS2021')">
+            2021
+        </button>
+    </div>
+
+    <div id="PS2019" class="tab nav tabcontent1">
+        <button class="tablink" onclick="openPage(event, 'PS2019Project1')">
+            Spooky Loop
+        </button>
+    </div>
+
+    <div id="PS2021" class="tab nav tabcontent1">
+        <button class="tablink" onclick="openPage(event, 'PS2021Project1')">
+            Lava Lamp
+        </button>
+        <button class="tablink" onclick="openPage(event, 'PS2021Project2')">
+            Computer Vision
+        </button>
+    </div>
+
+    <!------------------------------------------------------->
+
+    <div id="PS2019Project1" class="tabcontent2" style="padding: 24px 12px;">
+        <div class="subheader" style="text-align: center; text-decoration: none;">
+            Spooky Loop
+        </div>
+        <p>
+            In 2019, I was taught to loop using masks in After Effects. I was
+            inspired by the spirit of Halloween, and chose to make a series of
+            themed loops.
+        </p>
+        <img src="../../media/video/Spooky Halloween Smoke Cup gif.gif" />
+        <p>
+            This first video is a continuous stream of fog. I decorated the backdrop
+            with a black cloth and holiday lights, aiming to create a dark ambience.
+            My roommate helped me by blowing vape smoke through a straw, into the
+            cup. I took just three seconds of the film and masked it to create a
+            seamless loop.
+        </p>
+        <img src="../../media/video/Spooky Halloween Pumpkin Flame gif.gif" />
+        <p>
+            This first video is a pumpkin candle that always burns. My biggest
+            challenge was masking the shadows so that the scene could respond to the
+            movement of the light without a moving shadow. The shadow was
+            problematic because I found it to be distracting from the rest of the
+            scene. I’ve later used this skill to mask other problematic objects,
+            such as a tree branch blowing in-and-out of the frame. It’s a tedious
+            process which I tend to enjoy.
+        </p>
+    </div>
+
+    <div id="PS2021Project1" class="tabcontent2" style="padding: 24px 12px;">
+        <div class="subheader" style="text-align: center; text-decoration: none;">
+            Lava Lamp
+        </div>
+        <p>
+            In 2021, I was assigned to consider the use of Type and Typeface for
+            visual communication. My goal was to mimic the expereince of watching
+            a lava lamp, simultaneously promoting the object.
+        </p>
+        <div class="videowrapper">
+            <iframe src="https://player.vimeo.com/video/762505278?h=922f7016f9""
+          width=" 800" height="500" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
+        </div>
+        <p>
+            Below are the other Typefaces I considered before settling on the final design, shown above.
+        </p>
+        <div class="slideshow-container">
+            <p style="text-align: center; padding: 5px;">Typeface Study:</p>
+            <div class="mySlides fade">
+                <img src="../../media/video/lamp1.png" />
+            </div>
+
+            <div class="mySlides fade">
+                <img src="../../media/video/lamp2.png" />
+            </div>
+
+            <br />
+            <a class="prev">&#10094;</a>
+            <a class="next">&#10095;</a>
+            <div style="text-align: center">
+                <span class="dot"></span>
+                <span class="dot"></span>
+            </div>
+        </div>
+    </div>
+
+    <div id="PS2021Project2" class="tabcontent2" style="padding: 24px 12px;">
+        <div class="subheader" style="text-align: center; text-decoration: none;">
+            Computer Vision
+        </div>
+        <p>
+            In 2020, machine learning became an integral talking point among artists
+            and designers. I was excited by the tools becoming available for commercial
+            use, and for the past several years I've become almost obsessed.
+            <br />
+            <br />
+            The first time I discovered machine generated art, I was researching for an essay.
+            <a href="http://www.textevolution.net/" target="_blank">Evolution</a>, created in 2013 by Swedish
+            artists Johannes Heldén and Håkan Jonson, is a JavaScript poetic/musical artwork
+            that generates evolving layers of text and ambient tones. The source files contain
+            over a thousand 1-minute pieces composed by Heldén and the source code pulls its
+            language from articles written by NASA and other scholarly sources. The main themes of the
+            textual data typically adhere to physics and the nature of Earth and discovered exoplanets. I believe
+            the intention of these choices are to entice poetic, illustrative verses while sequencing the data.
+            <br />
+            <br />
+            Evolution was created to be an exploration of the questions posed by Alan Turing’s test,
+            The Imitation Game in 1951. Alan Turing is a founding creator of artificial intelligence and designed this
+            test to observe the semblances of computation and neuroscience to determine if a machine can
+            think. More specifically, the question is, “Can a machine do what we as thinking entities can do?”
+            The exploration of this question would challenge a programmer to create an Artificial Intelligence
+            (AI) with human-like responses, leading Turing to construct a textual interview between a human
+            evaluator and both another human and the AI. This is to determine if a human can tell which
+            responses are programmed and which are organic.
+            <br />
+            <br />
+            While Evolution is not intended for Turing’s test, it challenges the way most other AI's generate
+            language which is typically a scripted output after checking through a series of response rules.
+            Evolution constructs language by sequencing through articles with accurate definitions and
+            periodically forming poetic phrases from generated words. Evolution supposedly mimics the
+            artistic attributes of Johannes Heldén in language and composition; however, its generations are
+            usually incoherent altogether. The AI can only generate new phrases, so its work is never finalized
+            and is continuously being regenerated into something new.
+            <br />
+            <br />
+            In 2021, I dove deep into machine generated images and text. I love that machines can be either realistic or
+            imaginitive, depending on the model. I have used several models, such as VQGAN and Midjourney, but the first
+            was DeepDaze, ran using Anaconda with a console log.
+            <br>
+            <br>
+        </p>
+
+        <div id="PS2021Project2Contents" class="tab nav">
+            <button class="tablink" onclick="openPage(event, 'CV1')">
+                Sun and Moon
+            </button>
+            <button class="tablink" onclick="openPage(event, 'CV2')">
+                Hello Computer
+            </button>
+            <button class="tablink" onclick="openPage(event, 'CV3')">
+                Creation and Destruction
+            </button>
+        </div>
+
+    </div>
+
+    <div id="CV1" class="tabcontent1" style="padding: 24px 12px;">
+        <div class="subheader" style="text-align: center; text-decoration: none;">
+            Sun and Moon
+        </div>
+        <p>
+            This is a personal project using DeepDaze. I prompted the program to show me "The sun and moon in the
+            cosmos". I believed myself to have no expectations about what I would generate from this title, but the
+            image surprised me. I found the expressions on the personified objects to be cute and unlike a photograph
+            which I would've expected over whimsical characters. One thing they both have in common are two smiling
+            faces, one visible at the front and another covered in the back. The Sun also looks to be sleeping, with a
+            cold blue face in front of its yellow side, while The Moon is wide awake. One thing I discovered while
+            letting the machine generate hundreds of the images was that the objects in and around the scene seemed to
+            dance as their colors and form shift. At this point, I realised that I generated too many images that look
+            entirely too similar and, when compiled, had too little variation to make it interesting. To do it justice,
+            I edited a short music video from the animation which added some sentimental value to an otherwise
+            repetitive product.
+        </p>
+        <div class="videowrapper">
+            <iframe width="800" height="500" src="https://www.youtube.com/embed/HbkAeaySg5Q"
+                title="YouTube video player" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowfullscreen></iframe>
+        </div>
+        <p>
+            See the video <a href="https://youtu.be/HbkAeaySg5Q">here</a>.
+        </p>
+    </div>
+
+    <div id="CV2" class="tabcontent1" style="padding: 24px 12px;">
+        <div class="subheader" style="text-align: center; text-decoration: none;">
+            Hello Computer
+        </div>
+        <p>
+            In 2021, I used VQGAN to complete an assignment, which prompted me to use stop animation to tell a
+            narrative. A question that inspired my narrative was “To what extent can computers think like humans?” I
+            aimed to test the computer's ability to perceive itself. In this exploration, I prompted it to imagine
+            certain adjectives attributable to machines, such as a computer, desktop, hardware, circuitry, math, neural
+            networks, and so on. The goal was to show off the intricacies of the machine, as well as its limitation to
+            ever knowing its true form.
+        </p>
+        <div class="videowrapper">
+            <iframe title="vimeo-player" src="https://player.vimeo.com/video/643334952?h=ac747d54d3" width="800"
+                height="500" frameborder="0" allowfullscreen></iframe>
+        </div>
+        <p>
+            See the video <a href="https://youtu.be/1yrpmpvwLZE">here</a>.
+        </p>
+    </div>
+
+    <div id="CV3" class="tabcontent1" style="padding: 24px 12px;">
+        <div class="subheader" style="text-align: center; text-decoration: none;">
+            Creation and Destruction
+        </div>
+        <p>
+            In 2021, I was assigned to create the same video with two, opposing parts using the same clips. I first
+            created a series of images to be used as training models photo to prompt the same shapes. I then used these
+            re-imagined images to create the story, morphing from one to the next. The first video is to show my process
+            of creation, and the order in which I selected my images. The second video is my process of deconstruction,
+            creating an alternate story to the first.
+        </p>
+        <div class="videowrapper">
+            <iframe width="800" height="500" src="https://www.youtube.com/embed/https://youtu.be/x-hpP2JUm1I"
+                title="YouTube video player" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowfullscreen style="display:inline-block"></iframe></div>
+                <div class="videowrapper" >
+            <iframe width="800" height="500" src="https://www.youtube.com/embed/https://youtu.be/MAfnCy6Vj-Y"
+                title="YouTube video player" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowfullscreen style="display:inline-block"></iframe>
+        </div>
+        <p>
+            See the first video <a href="https://youtu.be/x-hpP2JUm1I">here</a>.
+        </p>
+
+        <p>
+            See the second video <a href="https://youtu.be/MAfnCy6Vj-Y">here</a>.
+        </p>
+    </div>
+
+    <script>
+        ; (function () {
+            init() //on page load - show first slide, hidethe rest
+
+            function init() {
+                parents = document.getElementsByClassName('slideshow-container')
+
+                for (j = 0; j < parents.length; j++) {
+                    var slides = parents[j].getElementsByClassName('mySlides')
+                    var dots = parents[j].getElementsByClassName('dot')
+                    slides[0].classList.add('active-slide')
+                    dots[0].classList.add('active')
+                }
+            }
+
+            dots = document.getElementsByClassName('dot') //dots functionality
+
+            for (i = 0; i < dots.length; i++) {
+                dots[i].onclick = function () {
+                    slides = this.parentNode.parentNode.getElementsByClassName(
+                        'mySlides',
+                    )
+
+                    for (j = 0; j < this.parentNode.children.length; j++) {
+                        this.parentNode.children[j].classList.remove('active')
+                        slides[j].classList.remove('active-slide')
+                        if (this.parentNode.children[j] == this) {
+                            index = j
+                        }
+                    }
+                    this.classList.add('active')
+                    slides[index].classList.add('active-slide')
+                }
+            }
+
+            let currentIndex = 0;
+
+            //prev/next functionality
+            links = document.querySelectorAll('.slideshow-container a')
+
+            for (i = 0; i < links.length; i++) {
+                links[i].onclick = function () {
+                    current = this.parentNode
+                    var slides = current.getElementsByClassName('mySlides')
+                    var dots = current.getElementsByClassName('dot')
+                    curr_slide = slides[currentIndex]
+                    curr_dot = dots[currentIndex]
+                    curr_slide.classList.remove('active-slide')
+                    curr_dot.classList.remove('active')
+
+                    if (this.className == 'next') {
+                        if (currentIndex === slides.length - 1) {
+                            currentIndex = 0
+                        } else {
+                            currentIndex += 1
+                        }
+                    }
+
+                    if (this.className == 'prev') {
+                        if (currentIndex === 0) {
+                            currentIndex = slides.length - 1
+                        } else {
+                            currentIndex -= 1
+                        }
+                    }
+                    curr_slide = slides[currentIndex]
+                    curr_dot = dots[currentIndex]
+                    curr_slide.classList.add('active-slide')
+                    curr_dot.classList.add('active')
+                }
+            }
+        })()
+    </script>
+
+    <!--NAVIGATION SCRIPT-->
+    <script>
+        //navigation tabs
+        function openPage(evt, pageName) {
+            var i, tabcontent1, tabcontent2, tabcontent3, tablink
+            tabcontent1 = document.getElementsByClassName('tabcontent1')
+            tabcontent2 = document.getElementsByClassName('tabcontent2')
+            tabcontent3 = document.getElementsByClassName('tabcontent3')
+
+            for (i = 0; i < tabcontent1.length; i++) {
+                tabcontent1[i].style.display = 'none'
+            }
+            tablink = document.getElementsByClassName('tablink')
+            for (i = 0; i < tablink.length; i++) {
+                tablink[i].className = tablink[i].className.replace(' active', '')
+            }
+            document.getElementById(pageName).style.display = 'block'
+            evt.currentTarget.className += ' active'
+
+            for (i = 0; i < tabcontent2.length; i++) {
+                tabcontent2[i].style.display = 'none'
+            }
+            tablink = document.getElementsByClassName('tablink')
+            for (i = 0; i < tablink.length; i++) {
+                tablink[i].className = tablink[i].className.replace(' active', '')
+            }
+            document.getElementById(pageName).style.display = 'block'
+            evt.currentTarget.className += ' active'
+
+            for (i = 0; i < tabcontent3.length; i++) {
+                tabcontent3[i].style.display = 'none'
+            }
+            tablink = document.getElementsByClassName('tablink')
+            for (i = 0; i < tablink.length; i++) {
+                tablink[i].className = tablink[i].className.replace(' active', '')
+            }
+            document.getElementById(pageName).style.display = 'block'
+            evt.currentTarget.className += ' active'
+        }
+        // Get the element with id="defaultOpen" and click on it
+        document.getElementById('defaultOpen').click()
+    </script>
+</body>
+
+</html>
