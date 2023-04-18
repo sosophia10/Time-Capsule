@@ -3,7 +3,7 @@ $(document).ready(function() {
   var maxContainerWidth = 1800;
   var minContainerWidth = 400;
   var maxScale = 100;
-  var minScale = 50;
+  var minScale = 70;
 
   var leftPos = 20;
   var topPos = 20;
