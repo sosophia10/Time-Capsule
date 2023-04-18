@@ -1,0 +1,619 @@
+<html>
+  <head>
+    <title>Sprinkles: Drawing Tool Evolution</title>
+    <style>
+      body {
+        font-family: 'Roboto Mono', monospace;
+        font-size: 16px;
+        background-color: #d3c7ae;
+      }
+
+      .nav {
+        width: 99%;
+        height: 40px;
+        background-color: #d3c7ae;
+        text-align: center;
+      }
+
+      .header {
+        font-size: 22px;
+        text-align: center;
+        font-weight: bold;
+        color: #5c0d70;
+        margin-top: 2em;
+      }
+
+      .title {
+        text-decoration: underline;
+      }
+
+      .date {
+        text-decoration: none;
+      }
+
+      .subheader {
+        font-weight: bold;
+        font-size: 18px;
+        text-decoration: underline;
+        font-weight: bold;
+        color: #5c0d70;
+        padding-left: 5px;
+      }
+
+      p {
+        font-size: 16px;
+        color: #000;
+        text-align: justify;
+        text-justify: inter-word;
+        padding: 30px;
+      }
+
+      .bulletmargin {
+        padding-left: 10px;
+      }
+
+      /* Style the tab */
+      .tab {
+        overflow: hidden;
+        background-color: #ebb190;
+      }
+
+      /* Style the buttons that are used to open the tab content */
+      .tab button {
+        color: #5c0d70;
+        background-color: inherit;
+        float: center;
+        border: none;
+        outline: none;
+        cursor: pointer;
+        padding: 14px 16px;
+        transition: 0.3s;
+      }
+
+      /* Change background color of buttons on hover */
+      .tab button:hover {
+        background-color: #cb8c89;
+      }
+
+      /* Create an active/current tablink class */
+      .tab button.active {
+        background-color: #5c0d70;
+        color: #ccc;
+      }
+
+      /* Style the tab content */
+      .tabcontent1 {
+        display: none;
+      }
+      /* Style the tab content */
+      .tabcontent2 {
+        display: none;
+        padding: 24px 12px;
+      }
+      /* Style the tab content */
+      .tabcontent3 {
+        display: none;
+        padding: 24px 12px;
+      }
+
+      img {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        margin: center;
+        max-width: 1000px;
+        min-width: 400px;
+        width: 100%;
+        min-height: 400px;
+        object-fit: cover;
+      }
+
+      .videoWrapper {
+        position: relative;
+        padding-bottom: 56.25%; /* 16:9 */
+        height: 0;
+      }
+      .videoWrapper iframe {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+      }
+
+      .mySlides {
+        display: none;
+      }
+      .active-slide {
+        display: block;
+      }
+      .slideshow-container {
+        max-width: 1000px;
+        position: relative;
+        margin: auto;
+      }
+
+      /* Fading animation */
+      .fade {
+        animation-name: fade;
+        animation-duration: 1.5s;
+      }
+
+      @keyframes fade {
+        from {
+          opacity: 0.4;
+        }
+        to {
+          opacity: 1;
+        }
+      }
+
+      /* Next & previous buttons */
+      .prev,
+      .next {
+        cursor: pointer;
+        position: absolute;
+        top: 50%;
+        width: 20px;
+        padding: 16px;
+        margin-top: -50px;
+        color: #cb8c89;
+        font-weight: bold;
+        font-size: 48px;
+        font-stretch: ultra-condensed;
+        transition: 0.6s ease;
+        border-radius: 0 3px 3px 0;
+        user-select: none;
+      }
+
+      /* Position the "next button" to the right */
+      .next {
+        right: 0;
+        border-radius: 3px 0 0 3px;
+      }
+
+      /* On hover, add a grey background color */
+      .prev:hover,
+      .next:hover {
+        background-color: #ebb190a6;
+        color: #5c0d709f;
+      }
+
+      .dot {
+        cursor: pointer;
+        height: 13px;
+        width: 13px;
+        margin: 0 2px;
+        background-color: #ebb190;
+        border-radius: 50%;
+        display: inline-block;
+        transition: background-color 0.6s ease;
+      }
+
+      .active,
+      .dot:hover {
+        background-color: #cb8c89;
+      }
+
+      ::-webkit-scrollbar {
+        width: 15px;
+      }
+
+      ::-webkit-scrollbar-track {
+        background: #d3c7ae;
+      }
+
+      /* Handle */
+      ::-webkit-scrollbar-thumb {
+        background: #cb8c89;
+      }
+
+      /* Handle on hover */
+      ::-webkit-scrollbar-thumb:hover {
+        background: #ebb190;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="header">
+      <div class="title">Sprinkles (Processing and P5.js)</div>
+      <br />
+      <div class="date" stye="margin-top: -15px;">2021</div>
+    </div>
+
+    <p>
+      In 2021, I took a class in Creative Coding that taught me how to use
+      Processing (Java). This is a showcase of the evolution of a drawing tool.
+      I started playing with the concept of drawing and randomization with
+      Processing3. In this series, there are three distinct phases which
+      developed my final drawing tool.
+    </p>
+
+    <div class="tab nav">
+      <!--5 project tabs-->
+      <button class="tablink" onclick="openPage(event, 'one')">
+        Phase 1: The Mirror
+      </button>
+      <button class="tablink" onclick="openPage(event, 'two')">
+        Phase 2: The Sprinkles
+      </button>
+      <button class="tablink" onclick="openPage(event, 'three')">
+        Phase 3: The Tool
+      </button>
+    </div>
+
+    <div id="one" class="tab nav tabcontent1">
+      <button class="tablink" onclick="openPage(event, 'onedocu')">
+        Documentation
+      </button>
+      <button class="tablink" onclick="openPage(event, 'onecode')">
+        Code (p5.js)
+      </button>
+    </div>
+
+    <div id="two" class="tab nav tabcontent1">
+      <button class="tablink" onclick="openPage(event, 'twodocu')">
+        Documentation
+      </button>
+      <button class="tablink" onclick="openPage(event, 'twocode')">
+        Code (p5.js)
+      </button>
+    </div>
+
+    <div id="three" class="tab nav tabcontent1">
+      <button class="tablink" onclick="openPage(event, 'threedocu')">
+        Documentation
+      </button>
+      <button class="tablink" onclick="openPage(event, 'threecode')">
+        Code (p5.js)
+      </button>
+    </div>
+
+    <!---------------------------->
+    <div id="onedocu" class="tabcontent2">
+      <div class="subheader" style="text-align: center; text-decoration: none;">
+        The Mirror
+      </div>
+      <div>
+        <br />
+        <br />
+      </div>
+      <div class="videowrapper">
+        <iframe
+          src="https://player.vimeo.com/video/790291237?h=8040a2db04"
+          width="750"
+          height="500"
+          frameborder="0"
+          allow="autoplay; fullscreen"
+          allowfullscreen
+          text-align="center"
+        ></iframe>
+      </div>
+      <div>
+        <br />
+        <br />
+      </div>
+      <p>
+        The first drawing tool I created is a simple mirror of the drawing,
+        across both the X and Y axis. I then assigned a random draw color each
+        time after the drawing is paused.
+      </p>
+      <div class="slideshow-container">
+        <p style="text-align: center; padding: 5px;">Images:</p>
+        <div class="mySlides fade">
+          <img src="../../media/interactive/mirror2.jpg" />
+        </div>
+        <div class="mySlides fade">
+          <img src="../../media/interactive/mirror1.jpg" />
+        </div>
+        <br />
+        <a class="prev">&#10094;</a>
+        <a class="next">&#10095;</a>
+        <div style="text-align: center;">
+          <span class="dot"></span>
+          <span class="dot"></span>
+        </div>
+      </div>
+    </div>
+
+    <div id="onecode" class="tabcontent2">
+      <div class="subheader" style="text-align: center; text-decoration: none;">
+        The Mirror
+      </div>
+      <div>
+        <p>
+          See project code
+          <a
+            href="https://editor.p5js.org/sosophia10/sketches/aUR8a62Rx"
+            target="_blank"
+            text-align="center"
+          >
+            here.
+          </a>
+        </p>
+      </div>
+      <div class="videowrapper">
+      <iframe
+        style="
+          width: 750;
+          height: 500;
+          overflow: hidden;
+          padding: 10px;
+          text-align: center;
+        "
+        src="https://editor.p5js.org/sosophia10/full/aUR8a62Rx"
+      ></iframe></div>
+    </div>
+
+    <!---------------------------->
+    <div id="twodocu" class="tabcontent2">
+      <div class="subheader" style="text-align: center; text-decoration: none;">
+        The Sprinkles
+      </div>
+      <div>
+        <br />
+        <br />
+      </div>
+      <div class="videowrapper">
+      <iframe
+        src="https://player.vimeo.com/video/762561595?h=cdc4b6dd02"
+        width="750"
+        height="500"
+        frameborder="0"
+        allow="autoplay; fullscreen"
+        allowfullscreen
+        text-align="center"
+      ></iframe></div>
+      <div>
+        <br />
+        <br />
+      </div>
+      <p>
+        The second drawing tool focused on the design of my brush. I played with
+        rotating squares to circular shapes. Each square drawn would have a
+        randomized color, which created rainbow pinwheels and a spray that
+        reminds me of sprinkles. The size of the squares depend on the mouse
+        position along the X-axis.
+        <br />
+        <br />
+        I created one version of the tool where two rows are created at a time,
+        with a radius dependent on the mouse position along the Y-axis. The
+        pictures displayed are captured from that version.
+      </p>
+      <div class="slideshow-container">
+        <p style="text-align: center; padding: 5px;">Images:</p>
+        <div class="mySlides fade">
+          <img src="../../media/interactive/sprinkles1.jpg" />
+        </div>
+        <div class="mySlides fade">
+          <img src="../../media/interactive/sprinkles2.jpg" />
+        </div>
+        <div class="mySlides fade">
+          <img src="../../media/interactive/sprinkles3.jpg" />
+        </div>
+        <br />
+        <a class="prev">&#10094;</a>
+        <a class="next">&#10095;</a>
+        <div style="text-align: center;">
+          <span class="dot"></span>
+          <span class="dot"></span>
+          <span class="dot"></span>
+        </div>
+      </div>
+    </div>
+
+    <div id="twocode" class="tabcontent2">
+      <div class="subheader" style="text-align: center; text-decoration: none;">
+        The Sprinkles
+      </div>
+      <div>
+        <p>
+          See project code
+          <a
+            href="https://editor.p5js.org/sosophia10/sketches/5QW3uP7Pr"
+            target="_blank"
+            text-align="center"
+          >
+            here.
+          </a>
+        </p>
+      </div><div class="videowrapper">
+      <iframe
+        style="
+          width: 750;
+          height: 500;
+          overflow: hidden;
+          padding: 10px;
+          text-align: center;
+        "
+        src="https://editor.p5js.org/sosophia10/full/5QW3uP7Pr"
+      ></iframe></div>
+
+    </div>
+
+    <!---------------------------->
+    <div id="threedocu" class="tabcontent2">
+      <div class="subheader" style="text-align: center; text-decoration: none;">
+        The Tool
+      </div>
+      <div>
+        <br />
+        <br />
+      </div><div class="videowrapper">
+      <iframe
+        src="https://player.vimeo.com/video/790290934?h=ba5936bb28"
+        width="750"
+        height="500"
+        frameborder="0"
+        allow="autoplay; fullscreen"
+        text-align="center"
+        allowfullscreen
+      ></iframe></div>
+      <div>
+        <br />
+        <br />
+      </div>
+      <p>
+        The last drawing tool I created utilizes a simple color selection
+        feature. I reused my sprinkles brush, but now applying a controlled set
+        of colors to the canvas.
+      </p>
+      <div class="slideshow-container">
+        <p style="text-align: center; padding: 5px;">Images:</p>
+        <div class="mySlides fade">
+          <img src="../../media/interactive/tool1.jpg" />
+        </div>
+        <div class="mySlides fade">
+          <img src="../../media/interactive/tool2.jpg" />
+        </div>
+        <div class="mySlides fade">
+          <img src="../../media/interactive/tool3.jpg" />
+        </div>
+        <br />
+        <a class="prev">&#10094;</a>
+        <a class="next">&#10095;</a>
+        <div style="text-align: center;">
+          <span class="dot"></span>
+          <span class="dot"></span>
+          <span class="dot"></span>
+        </div>
+      </div>
+    </div>
+
+    <div id="threecode" class="tabcontent2">
+      <div class="subheader" style="text-align: center; text-decoration: none;">
+        The Tool
+      </div>
+      <div>
+        <p>
+          See project code
+          <a
+            href="https://editor.p5js.org/sosophia10/sketches/EWNPn_ZX6"
+            target="_blank"
+          >
+            here.
+          </a>
+        </p>
+      </div><div class="videowrapper">
+      <iframe
+        style="width: 750; height: 500; overflow: hidden; padding: 10px;"
+        src="https://editor.p5js.org/sosophia10/full/EWNPn_ZX6"
+      ></iframe></div>
+    </div>
+
+    <script>
+      ; (function () {
+          init() //on page load - show first slide, hidethe rest
+
+          function init() {
+              parents = document.getElementsByClassName('slideshow-container')
+
+              for (j = 0; j < parents.length; j++) {
+                  var slides = parents[j].getElementsByClassName('mySlides')
+                  var dots = parents[j].getElementsByClassName('dot')
+                  slides[0].classList.add('active-slide')
+                  dots[0].classList.add('active')
+              }
+          }
+
+          dots = document.getElementsByClassName('dot') //dots functionality
+
+          for (i = 0; i < dots.length; i++) {
+              dots[i].onclick = function () {
+                  slides = this.parentNode.parentNode.getElementsByClassName(
+                      'mySlides',
+                  )
+
+                  for (j = 0; j < this.parentNode.children.length; j++) {
+                      this.parentNode.children[j].classList.remove('active')
+                      slides[j].classList.remove('active-slide')
+                      if (this.parentNode.children[j] == this) {
+                          index = j
+                      }
+                  }
+                  this.classList.add('active')
+                  slides[index].classList.add('active-slide')
+              }
+          }
+
+          let currentIndex = 0;
+
+          //prev/next functionality
+          links = document.querySelectorAll('.slideshow-container a')
+
+          for (i = 0; i < links.length; i++) {
+              links[i].onclick = function () {
+                  current = this.parentNode
+                  var slides = current.getElementsByClassName('mySlides')
+                  var dots = current.getElementsByClassName('dot')
+                  curr_slide = slides[currentIndex]
+                  curr_dot = dots[currentIndex]
+                  curr_slide.classList.remove('active-slide')
+                  curr_dot.classList.remove('active')
+
+                  if (this.className == 'next') {
+                      if (currentIndex === slides.length - 1) {
+                          currentIndex = 0
+                      } else {
+                          currentIndex += 1
+                      }
+                  }
+
+                  if (this.className == 'prev') {
+                      if (currentIndex === 0) {
+                          currentIndex = slides.length - 1
+                      } else {
+                          currentIndex -= 1
+                      }
+                  }
+                  curr_slide = slides[currentIndex]
+                  curr_dot = dots[currentIndex]
+                  curr_slide.classList.add('active-slide')
+                  curr_dot.classList.add('active')
+              }
+          }
+      })()
+  </script>
+
+    <!--NAVIGATION SCRIPT-->
+    <script>
+      //navigation tabs
+      function openPage(evt, pageName) {
+        var i, tabcontent1, tabcontent2, tabcontent3, tablink
+        tabcontent1 = document.getElementsByClassName('tabcontent1')
+        tabcontent2 = document.getElementsByClassName('tabcontent2')
+        tabcontent3 = document.getElementsByClassName('tabcontent3')
+
+        for (i = 0; i < tabcontent1.length; i++) {
+          tabcontent1[i].style.display = 'none'
+        }
+        tablink = document.getElementsByClassName('tablink')
+        for (i = 0; i < tablink.length; i++) {
+          tablink[i].className = tablink[i].className.replace(' active', '')
+        }
+        document.getElementById(pageName).style.display = 'block'
+        evt.currentTarget.className += ' active'
+
+        for (i = 0; i < tabcontent2.length; i++) {
+          tabcontent2[i].style.display = 'none'
+        }
+        tablink = document.getElementsByClassName('tablink')
+        for (i = 0; i < tablink.length; i++) {
+          tablink[i].className = tablink[i].className.replace(' active', '')
+        }
+        document.getElementById(pageName).style.display = 'block'
+        evt.currentTarget.className += ' active'
+
+        for (i = 0; i < tabcontent3.length; i++) {
+          tabcontent3[i].style.display = 'none'
+        }
+        tablink = document.getElementsByClassName('tablink')
+        for (i = 0; i < tablink.length; i++) {
+          tablink[i].className = tablink[i].className.replace(' active', '')
+        }
+        document.getElementById(pageName).style.display = 'block'
+        evt.currentTarget.className += ' active'
+      }
+      // Get the element with id="defaultOpen" and click on it
+      document.getElementById('defaultOpen').click()
+    </script>
+  </body>
+</html>

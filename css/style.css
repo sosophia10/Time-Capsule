@@ -1,0 +1,497 @@
+#background-video {
+  width: 35vw;
+  height: 35vh;
+  object-fit: cover;
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: auto;
+  margin-bottom: auto;
+  z-index: 1;
+}
+
+.is-hidden {
+  display: none;
+}
+
+.start {
+  padding: 8px 8px 8px 32px;
+  background: url(/media/icons/start.png);
+  background-position: 8px 8px;
+  background-repeat: no-repeat;
+}
+
+.menu-wrapper {
+  
+  z-index: 0;
+  position: relative;
+  height: 100%;
+
+
+}
+
+/*match to top border of taskbar height*/
+
+.menu-placeholder {
+  
+  position: relative;
+  height: calc(100% - 66px);
+}
+
+.menu {
+
+  z-index: 99999;
+  position: absoulte;
+
+}
+
+/*Taskbar Navigation*/
+.menu ul {
+
+  list-style-type: none;
+}
+
+.menu ul ul {
+
+  width: 150px;
+
+}
+
+/* float the list to make it horizontal and a relative positon so that you can control the dropdown menu positon */
+
+.menu li {
+
+  float: left;
+
+  width: 150px;
+
+  position: relative;
+
+}
+
+/* style the links for the top level */
+
+.menu a,
+.menu a:visited {
+  display: block;
+  font-size: 11px;
+  text-decoration: none;
+  color: #9FB1BC;
+  width: 139px;
+  height: 30px;
+  border: 1px solid #272643;
+  border-width: 1px 1px 0 0;
+  background: #272643;
+  padding-left: 10px;
+  line-height: 29px;
+
+
+}
+
+
+* html .menu a,
+* html .menu a:visited {
+  width: 150px;
+}
+
+
+
+
+/* style the second level background */
+
+.menu .drop,
+.menu .drop:visited {
+
+  background: #cb8c89;
+  color: #f1db9f;
+
+}
+
+/* style the second level hover */
+
+.menu .drop:hover {
+
+  background: #ebb190;
+  color: #5c0d70;
+
+}
+
+.menu :hover>.drop {
+
+  background: #ebb190;
+  color: #5c0d70;
+
+}
+
+/* style the third level background */
+
+.menu ul ul ul a,
+.menu ul ul ul a:visited {
+
+  background: #f1db9f;
+  color: #5c0d70;
+
+}
+
+/* style the third level hover */
+
+.menu ul ul ul a:hover {
+
+  background: #ebb190;
+  color: #5c0d70;
+
+}
+
+.menu ul ul ul :hover>a {
+
+  background: #ebb190;
+  color: #5c0d70;
+
+}
+
+
+
+/* style the table so that it takes no part in the layout - required for IE to work */
+
+.menu table {
+  border-collapse: collapse;
+  border: 0;
+  position: absolute;
+  left: 0;
+  bottom: -1px;
+}
+
+
+
+/* hide the sub levels and give them a positon absolute so that they take up no room */
+
+.menu ul ul {
+
+  visibility: hidden;
+
+  position: absolute;
+
+  bottom: 31px;
+
+  left: 0;
+
+  width: 150px;
+
+}
+
+* html .menu ul ul {
+
+  bottom: 30px;
+
+}
+
+/* position the third level flyout menu */
+
+.menu ul ul ul {
+
+  left: 150px;
+
+  bottom: 0;
+
+  width: 150px;
+
+}
+
+/* position the third level flyout menu for a left flyout */
+
+.menu ul ul ul.left {
+
+  left: -150px;
+
+}
+
+
+/* style the second level links */
+
+.menu ul ul a,
+.menu ul ul a:visited {
+
+  background: #f1db9f;
+
+  color: #5c0d70;
+
+  height: auto;
+
+  line-height: 1em;
+
+  padding: 5px 10px;
+
+  width: 129px
+    /* yet another hack for IE5.5 */
+
+}
+
+* html .menu ul ul a {
+
+  width: 150px;
+
+
+}
+
+/* style the top level hover */
+
+.menu a:hover,
+.menu ul ul a:hover {
+
+  color: #f1db9f;
+
+  background: #cb8c89;
+
+}
+
+.menu :hover>a,
+.menu ul ul :hover>a {
+
+  color: #f1db9f;
+
+  background: #cb8c89;
+
+}
+
+
+
+/* make the second level visible when hover on first level list OR link */
+
+.menu ul li:hover ul,
+
+.menu ul a:hover ul {
+
+  visibility: visible;
+
+  height: auto;
+
+}
+
+/* keep the third level hidden when you hover on first level list OR link */
+
+.menu ul :hover ul ul {
+
+  display: none;
+
+}
+
+/* keep the fourth level hidden when you hover on second level list OR link */
+
+.menu ul :hover ul :hover ul ul {
+
+  display: none;
+
+}
+
+/* make the third level visible when you hover over second level list OR link */
+
+.menu ul :hover ul :hover ul {
+
+  display: block;
+
+  bottom: 0;
+
+}
+
+/* make the fourth level visible when you hover over third level list OR link */
+
+.menu ul :hover ul :hover ul :hover ul {
+
+  display: block;
+
+  bottom: 0;
+
+}
+
+button{
+  cursor: pointer;
+}
+
+
+.button-container button {
+  transform-origin: top left;
+}
+
+
+
+.button-container button {
+
+}
+
+
+
+/*Application Icons*/
+
+.icon {
+  margin-bottom: 10px;
+
+}
+
+
+
+.experience {
+  /*margin-top: 0px;
+  margin-left: 10px;*/
+  padding: 10px;
+  background: transparent;
+  border-style: dashed;
+  border-color: #583939;
+  color: #FFFFFF;
+  display: inline-block;
+  max-width: 114px;
+  cursor: pointer;
+}
+
+
+
+.digital {
+  /*
+  margin-top: 160px;
+  margin-left: -120px;*/
+  padding: 10px;
+  background: transparent;
+  border-style: dashed;
+  border-color: #583939;
+  color: #FFFFFF;
+  display: inline-block;
+  max-width: 114px;
+  cursor: pointer;
+
+}
+
+.modeled {
+  /*margin-top: 320px;
+  margin-left: -125px;*/
+  padding: 13px;
+  background: transparent;
+  border-style: dashed;
+  border-color: #583939;
+  color: #FFFFFF;
+  display: inline-block;
+  max-width: 114px;
+  cursor: pointer;
+
+}
+
+.video {
+
+  padding: 10px;
+  background: transparent;
+  border-style: dashed;
+  border-color: #583939;
+  color: #FFFFFF;
+  display: inline-block;
+  max-width: 114px;
+  cursor: pointer;
+
+}
+
+.sprinkles {
+
+  padding: 10px;
+  background: transparent;
+  border-style: dashed;
+  border-color: #583939;
+  color: #FFFFFF;
+  display: inline-block;
+  max-width: 114px;
+  cursor: pointer;
+}
+
+.pong {
+
+  padding: 10px;
+  background: transparent;
+  border-style: dashed;
+  border-color: #583939;
+  color: #FFFFFF;
+  display: inline-block;
+  max-width: 114px;
+  cursor: pointer;
+
+}
+
+
+.funky {
+
+  padding: 10px;
+  background: transparent;
+  border-style: dashed;
+  border-color: #583939;
+  color: #FFFFFF;
+  display: inline-block;
+  max-width: 114px;
+  cursor: pointer;
+
+}
+
+
+
+.interactive {
+
+  padding: 10px;
+  background: transparent;
+  border-style: dashed;
+  border-color: #583939;
+  color: #FFFFFF;
+  display: inline-block;
+  max-width: 114px;
+  cursor: pointer;
+
+}
+
+.github {
+
+  padding: 10px;
+  background: transparent;
+  border-style: dashed;
+  border-color: #583939;
+  color: #FFFFFF;
+  display: inline-block;
+  max-width: 114px;
+  cursor: alias;
+
+}
+
+.youtube {
+
+  padding: 10px;
+  background: transparent;
+  border-style: dashed;
+  border-color: #583939;
+  color: #FFFFFF;
+  display: inline-block;
+  max-width: 114px;
+  cursor: alias;
+
+}
+
+.vimeo {
+
+  padding: 10px;
+  background: transparent;
+  border-style: dashed;
+  border-color: #583939;
+  color: #FFFFFF;
+  display: inline-block;
+  max-width: 114px;
+  cursor: alias;
+
+}
+
+.linkedin {
+
+  padding: 10px;
+  background: transparent;
+  border-style: dashed;
+  border-color: #583939;
+  color: #FFFFFF;
+  display: inline-block;
+  max-width: 114px;
+  cursor: alias;
+}
