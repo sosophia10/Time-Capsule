@@ -15,13 +15,14 @@
 	a:link{color:#2F7A9C;text-decoration:none;font-style:bold;}
 	a:visited {color:#5c0d70;text-decoration:none}
 
-	nav{border-bottom: 1px solid #ccc;margin-bottom:1em}
+	nav{border-bottom: 1px solid #d3c7ae; margin-bottom:1em}
 	caption{text-align:left;font-weight:bold}
 	th{text-align:left;font-weight:bold}
 	table{padding:0}
 	td{font-size:95%;line-height:1.5em}
 	header{background-color:#5c0d70;padding:.2em;color:#f1db9f; min-height: 100px; height: 19%; }
-	article{padding-bottom:1em; height: 59%;}
+	article{padding-bottom:1em; height: 59%; overflow-x: scroll; background-color: #d3c7ae; }
+
 	footer{background-color:#5c0d70; padding:1em 0; max-height: 19%; }
 	      /* width */
 ::-webkit-scrollbar {
@@ -32,7 +33,17 @@
 ::-webkit-scrollbar-track {
   background: #d3c7ae; 
 }
- 
+
+/* The corner background of the scrollbar */
+::-webkit-scrollbar-corner {
+  background: #d3c7ae;
+}
+
+/* The bottom part of the track, below the thumb */
+::-webkit-scrollbar-track-piece:end {
+  background: #d3c7ae;
+}
+
 /* Handle */
 ::-webkit-scrollbar-thumb {
   background: #cb8c89; 

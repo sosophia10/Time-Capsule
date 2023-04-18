@@ -5,16 +5,17 @@ $(document).ready(function () {
     $('#sprinkles').dblclick(function () {
 
         var $objWindow = $('<iframe style="width:98.8%; min-width:98.8%; overflow: auto;" src="apps/sprinkles.html"></iframe>');
-        var windowH = window.innerHeight;
-        
+        var windowH = window.innerHeight - 100;
+        var windowW = window.innerWidth - 100;
+
         $($objWindow).appendTo('body');
         $objWindow.window({
 
             title: className,
-            width: 850,
+            width: windowW,
             height: windowH,
             position: {
-                my: 'left+' + 200 + ', top+' + 100,
+                my: 'left+' + 50 + ', top+' + 50,
                 at: 'left top',
                 of: window
             },

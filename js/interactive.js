@@ -5,7 +5,9 @@ $(document).ready(function () {
     $('#interactive').dblclick(function () {
 
         var $objWindow = $('<iframe style="width:98.8%; min-width:98.8%; overflow: auto;" src="apps/interactive.html"></iframe>');
-        var windowH = window.innerHeight;
+        var windowH = window.innerHeight - 0;
+
+        
         $($objWindow).appendTo('body');
         $objWindow.window({
 
@@ -13,7 +15,7 @@ $(document).ready(function () {
             width: 475,
             height: windowH,
             position: {
-                my: 'left+' + 200 + ', top+' + 200,
+                my: 'left+' + 200 + ', top+' + 0,
                 at: 'left top',
                 of: window
             },

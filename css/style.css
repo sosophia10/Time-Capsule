@@ -27,7 +27,7 @@
 }
 
 .menu-wrapper {
-  
+
   z-index: 0;
   position: relative;
   height: 100%;
@@ -35,10 +35,12 @@
 
 }
 
+
+
 /*match to top border of taskbar height*/
 
 .menu-placeholder {
-  
+
   position: relative;
   height: calc(100% - 66px);
 }
@@ -46,7 +48,7 @@
 .menu {
 
   z-index: 99999;
-  position: absoulte;
+  position: absolute;
 
 }
 
@@ -190,7 +192,7 @@
 
 }
 
-/* position the third level flyout menu */
+/* position the third level fly-out menu */
 
 .menu ul ul ul {
 
@@ -202,7 +204,7 @@
 
 }
 
-/* position the third level flyout menu for a left flyout */
+/* position the third level flyout menu for a left fly-out */
 
 .menu ul ul ul.left {
 
@@ -308,7 +310,7 @@
 
 }
 
-button{
+button {
   cursor: pointer;
 }
 
@@ -317,11 +319,6 @@ button{
   transform-origin: top left;
 }
 
-
-
-.button-container button {
-
-}
 
 
 
