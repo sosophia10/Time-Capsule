@@ -1,8 +1,22 @@
 $(document).ready(function () {
     var intCounter = 1;
     var className = $('#interactive').attr("class");
+    var mouseDownTime;
 
-    $('#interactive').dblclick(function () {
+    $('#interactive').on('mousedown', function () {
+        mouseDownTime = new Date().getTime();
+    });
+
+    $('#interactive').on('mouseup', function () {
+        var mouseUpTime = new Date().getTime();
+        var timeDifference = mouseUpTime - mouseDownTime;
+
+        if (timeDifference <= 250) {
+            openWindow();
+        }
+    });
+
+    function openWindow() {
 
         var $objWindow = $('<iframe style="width:98.8%; min-width:98.8%; overflow: auto;" src="apps/interactive.html"></iframe>');
         var windowH = window.innerHeight - 0;
@@ -26,7 +40,7 @@ $(document).ready(function () {
         });
 
         intCounter++;
-    });
+    }
 
     $('#taskbar').taskbar();
 

@@ -1,9 +1,9 @@
 $(document).ready(function() {
   var containerWidth = $('#desktop').width();
-  var maxContainerWidth = 1800;
+  var maxContainerWidth = 8600;
   var minContainerWidth = 400;
   var maxScale = 100;
-  var minScale = 70;
+  var minScale = 75;
 
   var leftPos = 20;
   var topPos = 20;

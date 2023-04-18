@@ -28,7 +28,6 @@
 
 .menu-wrapper {
 
-  z-index: 0;
   position: relative;
   height: 100%;
 
@@ -83,12 +82,12 @@
   display: block;
   font-size: 11px;
   text-decoration: none;
-  color: #9FB1BC;
+  color: #5c0d70;
   width: 139px;
   height: 30px;
-  border: 1px solid #272643;
+  border: 2px dashed #583939;
   border-width: 1px 1px 0 0;
-  background: #272643;
+  background: #f1db9f;
   padding-left: 10px;
   line-height: 29px;
 

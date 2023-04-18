@@ -1,8 +1,22 @@
 $(document).ready(function () {
     var intCounter = 1;
     var className = $('#funkyhangman').attr("class");
+    var mouseDownTime;
 
-    $('#funkyhangman').dblclick(function () {
+    $('#funkyhangman').on('mousedown', function () {
+        mouseDownTime = new Date().getTime();
+    });
+
+    $('#funkyhangman').on('mouseup', function () {
+        var mouseUpTime = new Date().getTime();
+        var timeDifference = mouseUpTime - mouseDownTime;
+
+        if (timeDifference <= 250) {
+            openWindow();
+        }
+    });
+
+    function openWindow() {
 
         var $objWindow = $('<iframe style="width:98.8%; min-width:98.8%; min-height:98.8%;" src="apps/funkyhangman.html"></iframe>');
         var windowH = window.innerHeight - 100;
@@ -26,7 +40,7 @@ $(document).ready(function () {
         });
 
         intCounter++;
-    });
+    }
 
     $('#taskbar').taskbar();
 
