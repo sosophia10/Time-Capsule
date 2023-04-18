@@ -10,7 +10,7 @@ I have owned my own Windows desktop since I was four, playing Barbie and pre-k e
 
 My entire life dedicates itself to the appreciation and creation of digital media and interactive design. Whether I am actively studying this interest or not, I am unabashedly gushing about computers, media, or digital innovation. It is clear to me now that machine labor will contribute to the productivity and social order of communities. 
 
-I believe in maintaining the right to privacy, free speech, and education. Global access to education, data, and tools are increasing. Consequently, the notion of production, creativity, and ethics are evolving within the new technological environment. I value cultivating a positive outcome for these developments.
+I believe in maintaining the right to privacy, free speech, and education. It is profound that global access to data and tools are increasing. Consequently, the notion of production, creativity, and ethics are evolving within the new technological environment. I value cultivating a positive outcome for these developments.
 
 ## Live page link:
 https://sosophia10.github.io/Time-Capsule/index/desktop.html
