@@ -4,6 +4,7 @@ This is a portfolio of the work completed during my undergrad, Digital Art and I
 
 Live Page:
 
+https://sosophia10.github.io/Time-Capsule/index/desktop.html
 
 
 Inspiration: 
