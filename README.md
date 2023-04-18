@@ -1,46 +1,11 @@
-# jquery-lwd
-A lightweight desktop-engine for JQuery
+# Time Capsule (2018-2022)
 
-# Description
-This lightweight jquery-ui-plugin provides basic desktop functionality.
+This is a portfolio of the work completed during my undergrad, Digital Art and Interactive Media Design.
 
-# Features
-<ul>
-    <li>
-        Windows
-        <ul>
-            <li>Resizable</li>
-            <li>Movable</li>
-            <li>Focus on active window</li>
-            <li>Minimizable</li>
-            <li>Maximizable</li>
-            <li>Titlebar-icons</li>
-        </ul>
-    </li>
-    <li>
-        Taskbar
-        <ul>
-            <li>Display buttons for open windows</li>
-            <li>Focus and restore windows on click</li>
-        </ul>
-    </li>
-</ul>
+Live Page:
 
-# Install
-Insert before &lt;/head&gt;-Tag:
-```html
-<link href="../lib/jquery-ui/jquery-ui.structure.min.css" rel="stylesheet" type="text/css" />
-<link id="themecss" href="../src/jquery-lwd/themes/jquery-ui-mintchoc/jquery-ui.theme.css" rel="stylesheet" type="text/css" />
-<link href="../src/jquery-lwd/jquery-lwd.structure.css" rel="stylesheet" type="text/css" />
 
-<script type="text/javascript" src="../lib/jquery-ui/jquery.min.js"></script>
-<script type="text/javascript" src="../lib/jquery-ui/jquery-ui.min.js"></script>
-<script type="text/javascript" src="../src/jquery-lwd/jquery-lwd.js"></script>
-```
 
-# Usage
+Inspiration: 
 
-# Demos
-<ul>
-    <li><a href="https://mstellmacher.github.io/jquery-lwd/demo/desktop.html" target="_blank">Basic Desktop</a></li>
-</ul>
+https://simone.computer/#/webdesktops
