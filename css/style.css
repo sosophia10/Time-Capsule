@@ -309,14 +309,39 @@
 
 }
 
-button {
-  cursor: pointer;
+
+.button-container{
+  width: span;
+  height: span;
 }
 
 
 .button-container button {
   transform-origin: top left;
+  transform: scale(var(--scale));
 }
+
+/* Application styles for mobile screen */
+@media (max-width: 480px) {
+  
+
+  .button-container button {
+    transform-origin: center;
+
+  }
+  
+}
+
+/* Application styles for large desktop */
+@media (min-width: 1600px) {
+
+  
+  .button-container button {
+    transform-origin: top left;
+
+  }
+}
+
 
 
 

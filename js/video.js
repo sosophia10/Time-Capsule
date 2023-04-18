@@ -11,7 +11,7 @@ $(document).ready(function () {
         var mouseUpTime = new Date().getTime();
         var timeDifference = mouseUpTime - mouseDownTime;
 
-        if (timeDifference <= 250) {
+        if (timeDifference <= 100) {
             openWindow();
         }
     });
