@@ -2,11 +2,11 @@
 
 ### Gist
 
-This is a website showcasing my creative work during my undergraduate studies in Digital Art and Media Design, B.Des. I emphasize in interactive media and front-end design, moving on to complete a Masters in Human-Computer Interaction. 
+This website is a showcase of my creative work during my undergraduate studies in Digital Art and Media Design, B.Des. I now emphasize interactive media and front-end design, moving on to complete a master's in Human-Computer Interaction. 
 
 ### Fluff
 
-I have owned my own Windows desktop since I was four, playing Barbie and pre-k educational games. By eight years old I discovered YouTube and have used it every day since. I could type full sentences on a keyboard and text more rapidly on a smartphone than my parents. At eleven years old I received my first research assignment: Create a website that educates readers about any topic, and cite online sources using links. I was adept at using the search bar and instantly felt enthralled by the massive database of Google. 
+I have owned a Windows desktop since I was four, playing Barbie and pre-k educational games. By eight years old I discovered YouTube and have used it every day since. I could type full sentences on a keyboard and thumb-text more rapidly on a smartphone than my parents. At eleven years old I received my first online research assignment: Create a website that educates readers about any topic and cite online sources using links. I was adept at using the search bar and was instantly enthralled by my ease of discovery through massive databases, hosted by search engines such as Google.
 
 My entire life dedicates itself to the appreciation and creation of digital media and interactive design. Whether I am actively studying this interest or not, I am unabashedly gushing about computers, media, or digital innovation. It is clear to me now that machine labor will contribute to the productivity and social order of communities. 
 
