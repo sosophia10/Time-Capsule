@@ -66,7 +66,7 @@ $(document).ready(function () {
 //Loading text styling
 document.addEventListener('DOMContentLoaded', function (event) {
   // Array with texts to Type
-  var dataText = ["Loading...", "Welcome :)", "My name is Sophia", "artist and designer", "     ", "Thank you for being so patient!", "Loading...", "Loading...", "Loading...", "Loading..."];
+  var dataText = ["Loading...", "Welcome :)", "   ", "My name is Sophia", "artist and designer", "   ", "Thank you for being so patient!", "Loading...", "Loading...", "Loading...", "Loading...", "Loading...", "Loading...", "Loading..."];
 
   // Cycle through text array
   function typeWriter(text, i, fnCallback) {
@@ -92,7 +92,7 @@ document.addEventListener('DOMContentLoaded', function (event) {
       }, 0); //0 seconds -- Value sets how long after the sequence has finished to reloop the text array
     }
     // check if dataText[i] exists
-    if (i < dataText[i].length) {
+    if (i < dataText.length) { // Change this line
       // text exists! start typewriter animation
       typeWriter(dataText[i], 0, function () {
         // after callback (and whole text has been animated), start next text
@@ -100,6 +100,7 @@ document.addEventListener('DOMContentLoaded', function (event) {
       });
     }
   }
+  
   // start the text animation
   StartTextAnimation(0);
 });
