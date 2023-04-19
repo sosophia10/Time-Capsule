@@ -1,7 +1,7 @@
 //Loading screen
 $(window).on('load', function () {
   // Set the minimum display time (in milliseconds)
-  var minDisplayTime = 11000; // 15 seconds
+  var minDisplayTime = 4000; // 4 seconds
 
   // Get the current time
   var startTime = new Date().getTime();
