@@ -6,11 +6,11 @@ This website is a showcase of my creative work during my undergraduate studies i
 
 ### Fluff
 
-I have owned a Windows desktop since I was four, playing Barbie and pre-k educational games. By eight years old I discovered YouTube and have used it every day since. I could type full sentences on a keyboard and thumb-text more rapidly on a smartphone than my parents. At eleven years old I received my first online research assignment: Create a website that educates readers about any topic and cite online sources using links. I was adept at using the search bar and was instantly enthralled by my ease of discovery through massive databases, hosted by search engines such as Google.
+I belong to one of the first generations raised with technological literacy as a cornerstone of our upbringing. I have owned a Windows desktop since I was four, playing Barbie and pre-k educational games. By the time I was eight, I had discovered YouTube, a daily staple ever since. At eleven, my first online research assignment was to create a website that not only educated readers on a chosen topic but also cited its sources. Navigating through vast online databases with ease, I was captivated from the start. I quickly mastered typing full sentences on a keyboard and outpaced my parents in smartphone texting speed.
 
-My entire life dedicates itself to the appreciation and creation of digital media and interactive design. Whether I am actively studying this interest or not, I am unabashedly gushing about computers, media, or digital innovation. It is clear to me now that machine labor will contribute to the productivity and social order of communities. 
+My life is a testament to my passion for digital media and interactive design. Whether I'm formally studying these subjects or just chatting about them, I can't help but express my excitement for all things digital and innovative. I've come to see the significant role that automation and digital tools play in enhancing productivity and shaping the social fabric of our communities.
 
-I believe in maintaining the right to privacy, free speech, and education. It is profound that global access to data and tools is increasing. Consequently, the notion of production, creativity, and ethics are evolving within the new technological environment. I value cultivating a positive outcome for these developments.
+I deeply value people's access to information, access to opportunities, and democratic representation. The expanding global access to data and tools is reshaping our notions of production, creativity, and ethics in this new tech-driven era. I'm committed to fostering positive outcomes from these ongoing developments.
 
 ## Live page link:
 https://sosophia10.github.io/Time-Capsule/index/desktop.html
