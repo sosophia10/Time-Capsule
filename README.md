@@ -2,7 +2,7 @@
 
 ### Gist
 
-This website is a showcase of my creative work during my undergraduate studies in Digital Art and Media Design, B.Des. I now emphasize interactive media and front-end design, moving on to complete a master's in Information Systems (emphasizing Human-Computer Interaction). 
+This website is a showcase of my creative work during my undergraduate studies in Digital Art and Media Design, B.Des, where I emphasized interactive media and front-end design. I am now moving on to complete a master's in Information Systems (emphasizing Human-Computer Interaction). 
 
 ### Fluff
 
